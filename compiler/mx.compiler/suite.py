@@ -69,6 +69,11 @@ suite = {
 
     # ------------- Libraries -------------
 
+    "NEUROPH" : {
+      "sha1": "3c76151b8a2bb15988fa9a368e32d1cc9287eb14",
+      "path": "../../neuroph-neat/neuroph-core-2.3/neuroph-2.3.jar"
+    },
+
     "DACAPO" : {
       "urls" : [
         "https://lafo.ssw.uni-linz.ac.at/pub/graal-external-deps/dacapo-9.12-bach-patched.jar",
@@ -1225,7 +1230,7 @@ suite = {
     "org.graalvm.compiler.phases.common" : {
       "subDir" : "src",
       "sourceDirs" : ["src"],
-      "dependencies" : ["org.graalvm.compiler.phases"],
+      "dependencies" : ["org.graalvm.compiler.phases", "NEUROPH"],
       "annotationProcessors" : [
         "GRAAL_NODEINFO_PROCESSOR",
         "GRAAL_OPTIONS_PROCESSOR"
